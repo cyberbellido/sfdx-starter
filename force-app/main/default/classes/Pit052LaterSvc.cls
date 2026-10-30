@@ -20,4 +20,23 @@ public with sharing class Pit052LaterSvc {
     }
     throw new ShyGreetException('Not encouraged enough to greet');
   }
+
+  /**
+   * Returns a constant marker string.
+   * @return the string 'foo'
+   */
+  @TestVisible
+  private static String foo() {
+    return 'foo';
+  }
+
+  /**
+   * Doubles the given number, treating null as zero.
+   * @param value the number to double
+   * @return value multiplied by two, or 0 when value is null
+   */
+  @TestVisible
+  private static Integer bar(Integer value) {
+    return value == null ? 0 : value * 2;
+  }
 }

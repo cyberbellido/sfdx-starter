@@ -21,6 +21,21 @@ private class Pit052LaterSvcTest {
   }
 
   @IsTest
+  static void fooReturnsFoo() {
+    System.assertEquals('foo', Pit052LaterSvc.foo());
+  }
+
+  @IsTest
+  static void barDoublesValue() {
+    System.assertEquals(8, Pit052LaterSvc.bar(4));
+  }
+
+  @IsTest
+  static void barReturnsZeroForNull() {
+    System.assertEquals(0, Pit052LaterSvc.bar(null));
+  }
+
+  @IsTest
   static void shyGreetThrowsWhenNull() {
     try {
       Pit052LaterSvc.shyGreet(null);
