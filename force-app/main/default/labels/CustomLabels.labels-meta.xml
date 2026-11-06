@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
     <labels>
+        <fullName>ART1_Custom_2</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ART1_Custom_2</shortDescription>
+        <value>6nov B</value>
+    </labels>
+    <labels>
         <fullName>label17ago_1</fullName>
         <language>es</language>
         <protected>true</protected>
